@@ -11,7 +11,7 @@ def partition(list_data, left_index, right_index):
         while left_index < right_index and tem <= list_data[right_index]:
             right_index -= 1
         list_data[left_index] = list_data[right_index]
-        while left_index < right_index and tem >= list_data[left_index]:
+        while left_index < right_index and tem > list_data[left_index]:
             left_index += 1
         list_data[right_index] = list_data[left_index]
     list_data[left_index] = tem
